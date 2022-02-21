@@ -1,0 +1,1 @@
+insert into Employee values (0,'Default Value');
