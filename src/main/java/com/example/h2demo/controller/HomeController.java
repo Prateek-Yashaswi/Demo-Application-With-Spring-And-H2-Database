@@ -20,7 +20,12 @@ public class HomeController {
 
     @RequestMapping("/")
     public String home(){
-        return "home.jsp";
+        String s = "Execute http://localhost:8080/addData?id=101&name=Test To Save A Data\n" +
+                "http://localhost:8080/fetchData To Fetch All Data\n" +
+                "http://localhost:8080/fetchById/{id} And Pass An ID To Fetch Data By ID\n" +
+                "http://localhost:8080/deleteById/{id} And Pass An ID To Delete Data By ID";
+
+        return s;
     }
 
     @RequestMapping("/addData")
