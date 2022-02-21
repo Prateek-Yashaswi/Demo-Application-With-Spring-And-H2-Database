@@ -16,7 +16,7 @@ In This Project I Have Used Constructor Based Dependency Injection Which Is One 
 4. Use The Following URLs To Run The Operations
     1. http://localhost:8080/addData?id=101&name=Test - To Add Data (101,"Test") To The Table.
     2. http://localhost:8080/fetchData - To Fetch All Data From The Table
-    3. http://localhost:8080/fetchById/{id} - Pass An ID (In Place OF {id} To Get Data For The Passed ID)
-    4. http://localhost:8080/deleteById/{id} - Pass An ID (In Place OF {id} To Delete Data For The Passed ID)
+    3. http://localhost:8080/fetchById/{id} - Pass An ID (In Place OF {id}) To Get Data For The Passed ID)
+    4. http://localhost:8080/deleteById/{id} - Pass An ID (In Place OF {id}) To Delete Data For The Passed ID)
 
 *NOTE: Here In The Above URLs 8080 Is The Default Port Number On Which Application Will Run. Check Yours And Change The URLs Accordingly.*
