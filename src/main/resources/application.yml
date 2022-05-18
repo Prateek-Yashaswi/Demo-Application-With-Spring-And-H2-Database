@@ -1,3 +1,22 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /h2-demo
+
+management:
+  server:
+    port: 9080
+  endpoints:
+    web:
+      exposure:
+        include:
+          - health
+          - info
+          - prometheus
+  endpoint:
+    health:
+      show-details: always
+
 spring:
   h2:
     console:

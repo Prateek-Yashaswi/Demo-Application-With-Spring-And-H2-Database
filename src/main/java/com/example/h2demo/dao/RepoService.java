@@ -14,8 +14,9 @@ public class RepoService{
         this.employeeRepo = employeeRepo;
     }
 
-    public void addEmp(Employee employee){
-        employeeRepo.save(employee);
+    public void addEmp(int id, String name){
+        Employee e = new Employee(id, name);
+        employeeRepo.save(e);
     }
 
     public List<Employee> getAllEmp(){
