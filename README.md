@@ -13,11 +13,9 @@ In This Project I Have Used Constructor Based Dependency Injection Which Is One 
 1. Clone The Repository 
 2. Go To The "H2DemoApplicaion" Class And Run It. It Will Start The Server, Create A Database And A Table With A Default Entry (0, "Default").
 3. Open A Web Browser
-4. Use The Following URLs To Run The Operations
-    1. http://localhost:8080/addData?id=101&name=Test - To Add Data (101,"Test") To The Table.
-    2. http://localhost:8080/fetchData - To Fetch All Data From The Table
-    3. http://localhost:8080/fetchById/{id} - Pass An ID (In Place OF {id}) To Get Data For The Passed ID)
-    4. http://localhost:8080/deleteById/{id} - Pass An ID (In Place OF {id}) To Delete Data For The Passed ID)
-    5. http://localhost:8080/h2-console - To Open H2 Database Console
+4. Hit http://localhost:8080/h2-demo/swagger-ui.html To Open Swagger. You Can See The Documentation And Use The APIs.
+
+![Swagger Page](https://user-images.githubusercontent.com/60723631/169040499-30b6fb68-8690-46f0-93a4-b1b11005b375.jpg)
+
 
 *NOTE: Here In The Above URLs 8080 Is The Default Port Number On Which Application Will Run. Check Yours And Change The URLs Accordingly.*
