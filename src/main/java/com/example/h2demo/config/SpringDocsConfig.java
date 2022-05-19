@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Configuration;
 public class SpringDocsConfig {
     private static final String desc = "Provides 4 APIs to Add, Fetch, Delete Data and Fetch By ID";
     private static final Contact CONTACT = new Contact().name("Prateek Yashaswi").email("prateekyashaswi34@gmail.com");
-    private static final Info INFO = new Info().description(desc).title("CRUD Operations on H2 Database - Demo").version("1.0").contact(CONTACT);
+    private static final Info INFO = new Info().description(desc).title("CRUD Operations on Postgresql Database - Demo").version("1.0").contact(CONTACT);
 
     @Bean
     public OpenAPI springShopOpenAPI(){

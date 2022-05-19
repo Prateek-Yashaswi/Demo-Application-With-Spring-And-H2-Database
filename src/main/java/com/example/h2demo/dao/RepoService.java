@@ -14,9 +14,13 @@ public class RepoService{
         this.employeeRepo = employeeRepo;
     }
 
-    public void addEmp(int id, String name){
+    public boolean addEmp(int id, String name){
+        if(employeeRepo.findById(id).isPresent())
+            return false;
+
         Employee e = new Employee(id, name);
         employeeRepo.save(e);
+        return true;
     }
 
     public List<Employee> getAllEmp(){

@@ -20,8 +20,11 @@ public class HomeController {
     @PutMapping("/addData")
     public String addEmp(@Valid @RequestParam int id,
                          @Valid @RequestParam String name){
-        repoService.addEmp(id, name);
-        return id + "," + name + " Added to the Database";
+        if(repoService.addEmp(id, name)){
+            return id + "," + name + " Added to the Database";
+        }
+
+        return "Data already exists in the Database";
     }
 
     @GetMapping("/fetchAll")
